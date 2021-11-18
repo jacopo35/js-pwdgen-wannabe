@@ -8,25 +8,18 @@ Descrizione esercizio:
 */
 
 
-const name = prompt("come ti chiami?");
-console.log(name);
+let name = prompt('Scrivi il tuo Nome');
+let surname = prompt('Bravo! Ora il tuo Cognome');
+let color = prompt('Un ultimo sforzo! Il tuo colore preferito?');
+const number = '21';
 
-let cognome = "ottimo! Ora il tuo cognome!";
-let allerta = " sono nell'alert"
-
-const surname = prompt(cognome);
-console.log(surname);
-
-let color = prompt("continua cosi! Il tuo colore preferito? ");
-console.log(color);
-
-let numero = 10;
-numero += 11;
+// Visualizzazione nella Console
+console.log(
+    `
+    ${name}${surname}${color}${number}
+    `
+);
+// Visualizzazione in Pagina
+document.writeln(name + surname + color + number);
 
 
-let somma = `Ricapitolando ti chiami ${name} ${surname}, il tuo colore preferito è  ${color}  e il tuo numero direi che potrebbe essere il...${numero}`;
-
-document.getElementById("js").innerHTML = somma + " sono nel getelement";
-document.writeln(somma + " sono nel writeln");
-alert(somma + allerta);
-console.log(somma + "sono nella console");
